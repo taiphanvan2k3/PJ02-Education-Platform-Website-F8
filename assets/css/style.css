@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    /* Do poppins là chủ yếu */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ====================== Common ======================== */
+.main-content {
+    margin: 0 auto;
+    width: 1170px;
+    /* Khi màn hình lớn thì calc(100% - 48px) > 1170px nên main-content sẽ có width: 1170px
+    nhưng khi màn hình nhỏ thì thiết lập lại max-width và chừa 2 bên 24px */
+    max-width: calc(100% - 48px);
+}
+
+a {
+    text-decoration: none;
+    padding: 8px 21px;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 25px;
+    padding: 17px 16px;
+    min-width: 118px;
+    font-size: 1.6rem;
+    text-align: center;
+    background: #171100;
+    color: #FFF;
+    font-weight: 600;
+}
+
+/* ===================== Header ================= */
+.header {
+    background: #FFFCF4;
+}
+
+.header.fixed {
+    position: sticky;
+    /* padding-top của header là 36px và mong muốn khi cuộn
+    mà khoảng phía trên còn 8px thì mới sticky nên ta mới dùng top: -28px */
+    top: -28px;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+
+.header .nav {
+    margin-left: auto;
+}
+
+.nav .menu {
+    display: flex;
+    gap: 42px;
+}
+
+.nav .menu-item {
+    position: relative;
+    color: #5F5B53;
+    font-family: Poppins, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.nav li.active a,
+.nav .menu-item:hover {
+    color: #171100;
+    /* dùng font-weight: 600 làm giật chữ */
+    /* font-weight: 600; */
+    /* Do đó dùng tip text-shadow: tạo ra bóng đổ về chiều ngang 1px, chiều dọc 0px
+    blur: 0 */
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header .menu-item:hover::after {
+    position: absolute;
+    /* Do padding-left: 21px nên dư ra bên trái 21px */
+    left: 21px;
+    bottom: 6px;
+    display: inline-block;
+    content: "";
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+}
+
+.header .action {
+    margin-left: 49px;
+}
+
+.header .action .sign-up-btn {
+    min-width: 144px;
+}
