@@ -533,3 +533,80 @@ a {
     font-weight: 400;
     line-height: 1.54;
 }
+
+/* ========= Feature ============= */
+.features {
+    padding: 65px 0;
+    margin-top: 135px;
+}
+
+.features .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features .img-block {
+    display: flex;
+    gap: 30px;
+    width: 48.7%;
+}
+
+.features .img-block .img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.features .img-block .img.lower {
+    margin-top: 34px;
+}
+
+.features .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* Đặt width: 41% rồi cho justify-content: space-between hoặc padding-left
+    cho content */
+    width: 41%;
+}
+
+.features .content .desc {
+    margin-top: 16px;
+    width: 458px;
+    color: #5F5B53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.features .content .btn-cta {
+    margin-top: 32px;
+    min-width: 137px;
+    border: none;
+    border-radius: 26px;
+    background: var(--primary-color);
+}
+
+.features-2nd {
+    margin-top: 70px;
+}
+
+.features-2nd .body {
+    /* Đảo bằng CSS, đảo thứ tự trong HTML cũng được */
+    flex-direction: row-reverse;
+}
+
+.features-2nd .content {
+    width: 49%;
+}
+
+.features-2nd .img-block {
+    width: 41%;
+}
+
+.features-2nd .img-block .img {
+    width: 470px;
+    height: 440px;
+}
