@@ -732,3 +732,87 @@ a {
     background: var(--primary-color);
     cursor: default;
 }
+
+.footer {
+    padding: 96px 0 28px;
+    background: #2E2100;
+}
+
+.footer .row {
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554B;
+}
+
+.footer .row .col {
+    /* Tính độ rộng của từng col + gap với col bên phải */
+    width: 21.6%;
+}
+
+.footer .col:first-child {
+    width: 35.2%;
+}
+
+.footer .col .title {
+    position: relative;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    padding-bottom: 14px;
+}
+
+.footer .col .title::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 130px;
+    height: 1px;
+    background: #59554B;
+    left: 0;
+    bottom: 0;
+}
+
+.footer .col .desc {
+    margin-top: 18px;
+    max-width: 267px;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.footer .menu {
+    margin-top: 28px;
+}
+
+.footer .menu-item {
+    margin-top: 12px;
+}
+
+.footer .menu-item a {
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.footer .menu-item strong {
+    color: #FFF;
+    font-weight: 600;
+}
+
+.footer .col .socials {
+    display: flex;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.footer .copy-right {
+    margin-top: 28px;
+    color: #807D74;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
